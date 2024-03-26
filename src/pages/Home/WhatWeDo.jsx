@@ -1,6 +1,6 @@
 import React from "react";
 import { fuel, userinterface, hours } from "@assets";
-
+import { LazyLoadImage } from "react-lazy-load-image-component";
 const WhatWeDo = () => {
   return (
     <section class="text-gray-600 body-font">
@@ -19,7 +19,7 @@ const WhatWeDo = () => {
         <div class="flex flex-wrap -m-4">
           <div class="lg:w-1/3 sm:w-1/2 p-4">
             <div class="flex relative">
-              <img
+              <LazyLoadImage
                 alt="gallery"
                 class="absolute inset-0 w-full h-full object-cover object-center"
                 src={fuel}
@@ -38,7 +38,7 @@ const WhatWeDo = () => {
           </div>
           <div class="lg:w-1/3 sm:w-1/2 p-4">
             <div class="flex relative">
-              <img
+              <LazyLoadImage
                 alt="gallery"
                 class="absolute inset-0 w-full h-full object-cover object-center"
                 src={userinterface}
@@ -58,7 +58,7 @@ const WhatWeDo = () => {
           </div>
           <div class="lg:w-1/3 sm:w-1/2 p-4">
             <div class="flex relative">
-              <img
+              <LazyLoadImage
                 alt="gallery"
                 class="absolute inset-0 w-full h-full object-cover object-center"
                 src={hours}
