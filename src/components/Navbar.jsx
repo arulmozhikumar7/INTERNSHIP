@@ -8,11 +8,18 @@ const Navbar = () => {
     setIsDropdownOpen((prevState) => !prevState);
   };
 
+  const closeDropdown = () => {
+    setIsDropdownOpen(false);
+  };
   return (
     <nav className="mb-1 text-sm font-medium bg-gray-100 border-gray-200 ">
       <div className="flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto">
         <Link
           to="/"
+          onClick={() => {
+            toggleDropdown();
+            closeDropdown(); // Close the dropdown when Contact link is clicked
+          }}
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
           <img src={CNGLOGO} className="h-8" alt="CNG Logo" />
@@ -21,7 +28,9 @@ const Navbar = () => {
           </span>
         </Link>
         <button
-          onClick={toggleDropdown}
+          onClick={() => {
+            toggleDropdown();
+          }}
           type="button"
           className="inline-flex items-center justify-center w-10 h-10 p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
           aria-controls="navbar-default"
@@ -54,6 +63,10 @@ const Navbar = () => {
             <li>
               <Link
                 to="/"
+                onClick={() => {
+                  toggleDropdown();
+                  closeDropdown(); // Close the dropdown when Contact link is clicked
+                }}
                 className="block px-3 py-2 text-white bg-green-700 rounded md:bg-transparent md:text-green-700 md:p-0"
                 aria-current="page"
               >
@@ -63,6 +76,10 @@ const Navbar = () => {
             <li>
               <Link
                 to="/contact"
+                onClick={() => {
+                  toggleDropdown();
+                  closeDropdown(); // Close the dropdown when Contact link is clicked
+                }}
                 className="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 "
                 aria-current="page"
               >
@@ -72,6 +89,10 @@ const Navbar = () => {
             <li>
               <Link
                 to="/about"
+                onClick={() => {
+                  toggleDropdown();
+                  closeDropdown(); // Close the dropdown when Contact link is clicked
+                }}
                 className="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 "
               >
                 About
@@ -80,6 +101,10 @@ const Navbar = () => {
             <li>
               <Link
                 to="/terms-and-conditions"
+                onClick={() => {
+                  toggleDropdown();
+                  closeDropdown(); // Close the dropdown when Contact link is clicked
+                }}
                 className="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 "
               >
                 Terms and Conditions
@@ -88,6 +113,10 @@ const Navbar = () => {
             <li>
               <Link
                 to="/login"
+                onClick={() => {
+                  toggleDropdown();
+                  closeDropdown(); // Close the dropdown when Contact link is clicked
+                }}
                 className="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0"
               >
                 Login
