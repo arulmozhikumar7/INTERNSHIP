@@ -2,11 +2,11 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="bg-white dark:bg-gray-900">
+    <section className="bg-white ">
       <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-12">
         <a
           href="#"
-          className="inline-flex items-center justify-between px-1 py-1 pr-4 text-sm text-gray-700 bg-gray-100 rounded-full mb-7 dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700"
+          className="inline-flex items-center justify-between px-1 py-1 pr-4 text-sm text-gray-700 bg-gray-100 rounded-full mb-7 "
           role="alert"
         >
           <span className="text-xs bg-green-600 rounded-full text-white px-4 py-1.5 mr-3">
@@ -28,10 +28,10 @@ const Hero = () => {
             ></path>
           </svg>
         </a>
-        <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+        <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl ">
           Find CNG Fast and Easy
         </h1>
-        <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
+        <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 ">
           Our location-based service helps you quickly and easily find the
           nearest CNG pump station with accurate direction, speed, and distance
           data. Refuel hassle-free with us.
@@ -39,7 +39,7 @@ const Hero = () => {
         <div className="flex flex-col mb-8 space-y-4 lg:mb-16 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
           <a
             href="#"
-            className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:ring-green-300 dark:focus:ring-green-900"
+            className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:ring-green-300 "
           >
             For you
             <svg
