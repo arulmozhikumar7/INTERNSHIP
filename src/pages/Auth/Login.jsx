@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 import { CNG } from "@assets";
 const Login = () => {
   return (
-    <section class="bg-gray-50 dark:bg-gray-900 grid grid-cols-2 w-full">
+    <section class="bg-gray-50 dark:bg-gray-900 grid grid-cols-1 md:grid-cols-2 w-full">
       <div class="flex flex-col items-center w-full  py-4 mx-auto md:h-1/2 lg:py-0">
-        <div class="w-full bg-white rounded-lg shadow dark:border mt-8 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
+        <div class="w-full bg-white rounded-lg shadow dark:border md:mt-8 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
           <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
-            <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
+            <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 text-center md:text-2xl dark:text-white">
               Sign In Now
             </h1>
             <form class="space-y-4 md:space-y-6" action="#">
@@ -91,7 +91,7 @@ const Login = () => {
       </div>
       <div class="flex flex-col items-center  px-4 py-4 mx-auto md:h-1/2 lg:py-0">
         <img src={CNG} alt="CNG Logo" />
-        <p class="text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl">
+        <p class="text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl text-center">
           Find the best CNG stations near you
         </p>
       </div>
