@@ -43,12 +43,12 @@ const ForgotPassword = () => {
               <div class="ml-3 text-sm">
                 <label for="terms" class="font-light text-gray-500 ">
                   I accept the{" "}
-                  <a
+                  <Link
                     class="font-medium text-emerald-600 hover:underline "
-                    href="#"
+                    to="/terms-and-conditions"
                   >
                     Terms and Conditions
-                  </a>
+                  </Link>
                 </label>
               </div>
             </div>
