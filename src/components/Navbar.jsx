@@ -18,7 +18,7 @@ const Navbar = () => {
           to="/"
           onClick={() => {
             toggleDropdown();
-            closeDropdown(); // Close the dropdown when Contact link is clicked
+            closeDropdown();
           }}
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
